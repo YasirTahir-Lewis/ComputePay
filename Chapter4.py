@@ -6,7 +6,9 @@ def computepay(h,r):
         overpay = (r*1.5) * h2;
         grosspay = overpay + (40*r);
 
-	return grosspay
+    else: grosspay = h * r;
+	
+    return grosspay
 
 hrs = input("Enter Hours:")
 rate = input("Enter Rate:")
